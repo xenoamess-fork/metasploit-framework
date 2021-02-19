@@ -80,7 +80,7 @@ jobs:
         run: |
           gem install bundler
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v2.1.4
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
